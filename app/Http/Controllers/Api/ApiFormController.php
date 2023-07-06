@@ -38,7 +38,7 @@ class ApiFormController extends Controller
         
         if($request->photo != null){
             $salva_file = $request->photo->store('public/municipe');
-            $form->photo  =  substr($salva_file, 19);
+            $form->photo  =  $request->photo->getClientOriginalName();
         }
         $form->save();
 
