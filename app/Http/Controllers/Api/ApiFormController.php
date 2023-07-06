@@ -36,10 +36,11 @@ class ApiFormController extends Controller
         
         
         
-        if($request->photo != null){
-            $salva_file = $request->photo->store('public/municipe');
-            $form->photo  =  $request->photo->getClientOriginalName();
+        if ($request->photo != null) {
+            $salva_file = $request->photo->storeAs('public/municipe', $request->photo->getClientOriginalName());
+            $form->photo = $request->photo->getClientOriginalName();
         }
+        
         $form->save();
 
         return response()->json([
