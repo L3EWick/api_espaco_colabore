@@ -47,4 +47,11 @@ class ApiFormController extends Controller
             'data'      =>  $form
         ],201);
     }
+    public function dados()
+    {
+        $forms = Form::all();
+
+         return response()->json($forms);
+    }
+
 }
