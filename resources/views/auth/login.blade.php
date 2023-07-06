@@ -8,7 +8,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 	
-		<title>BCI</title>
+		<title>Espaço Colabore</title>
 	
 		<!--     Fonts and icons     -->
 		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons" rel="stylesheet">
@@ -50,7 +50,7 @@
 						<form method="POST" action="{{ route('login') }}">
 							{{ csrf_field() }}
 							
-							<h1 class="cor_texto_roxo">BCI - Boletim de Cadastro Imobiliario</h1>
+							<h1 class="cor_texto_roxo">Espaço Colabore</h1>
 							
 							<div class="form-group row">
 								<label class="control-label col-md-2 col-sm-2 col-xs-12" for="email">Email:</label>
