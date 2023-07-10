@@ -6,7 +6,7 @@ Route::get('/',            "AuthController@login")->name('login');
 Route::get ("/login", 		"AuthController@login")->name('login');
 Route::post('/login', 		"AuthController@entrar");
 Route::get ('/logout', 		'AuthController@logout')->name('logout');
-
+Route::get("termos_de_responsabilidade", "TermosController@index");
 
 Route::group(['middleware' => ['auth', 'acesso']], function () {
 
