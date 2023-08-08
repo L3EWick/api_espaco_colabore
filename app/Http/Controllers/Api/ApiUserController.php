@@ -21,13 +21,14 @@ class ApiUserController extends Controller
             
             return response()->json([
                 'success' => false,
-                'message' => 'Invalid email or Password',
+                'message' => ' Email ou Senha Incoretos',
             ], 401);
         }
 
          $usuario_logado = JWTAuth::user();
          
         return response()->json([
+            'id'    => $usuario_logado->id,
             'email' => $request->email,
             'nome' => $usuario_logado->nome,
             'success' => true,

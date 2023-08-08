@@ -19,6 +19,8 @@ class CreateFormTable extends Migration
             $table->string('idade');
             $table->string('profissao');
             $table->string('finalidade');
+            $table->string('user_id');
+            $table->string('telefone');
             $table->string('photo')->nullable();
             $table->timestamps();
         });

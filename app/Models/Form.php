@@ -9,7 +9,9 @@ class Form extends Model
     protected $table = "form";
 
     protected $fillable = [
+        'user_id',
         'nome',
+        'telefone',
         'idade',
         'profissao',
         'finalidade',

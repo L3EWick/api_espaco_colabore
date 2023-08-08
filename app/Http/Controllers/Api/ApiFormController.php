@@ -28,8 +28,10 @@ class ApiFormController extends Controller
         // $user = auth()->user()->id;
      
         $form = new Form();
-
+       
+        $form->user_id       = $request->user_id;
         $form->nome          = $request->nome;
+        $form->telefone      = $request->telefone;
         $form->idade         = $request->idade;
         $form->profissao     = $request->profissao;
         $form->finalidade    = $request->finalidade;
